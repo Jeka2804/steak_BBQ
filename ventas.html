@@ -1,0 +1,1154 @@
+<html>
+<head>
+<body background="images/fondo.jpg">
+<center><table width="950"><tr><td>
+
+<center><img src="images/logo.jpg" alt="logo de nuestra pagina web" table width="160">
+<center>
+<a href="index.html">
+<img src="images/inicio.jpg" alt="boton de inicio" table width="160"></a>
+<a href="productos.html">
+<img src="images/productos.jpg" alt="boton de productos" table width="140"></a> 
+<a href=https://www.google.com/maps?ll=14.609867,-90.4867&z=15&t=m&hl=es-ES&gl=US&mapclient=embed&q=Paseo+Cayal%C3%A1+-+Edificio+F1+Bulevar+Rafael+Landivar+Cdad.+de+Guatemala.com><img src="images/ubicacion.jpg" alt="boton de ubicacion" table width="160"></a>
+<a href="ventas.html"> 
+<img src="images/venta.jpg" alt="boton de venta" table width="155"></a>
+<a href="politicas.html">
+<img src="images/politicas.jpg" alt="boton de politicas" table width="160"></a>
+</center>
+
+<style type="text/css">
+p {
+	color: #FFF;
+}
+h2 {
+	color: #FFF;
+}
+</style>
+</head>
+
+
+
+ <br> <br>  
+
+ 
+
+<center>  
+
+ 
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">  
+  
+ 
+
+
+    <script>  
+
+ 
+
+        window.onload = function () {  
+
+ 
+
+            // Variables  
+
+ 
+
+            const baseDeDatos = [  
+
+ 
+
+                {  
+
+ 
+
+                    id: 1,  
+
+ 
+
+                    nombre: 'culote',  
+
+ 
+
+                    precio:60 ,  
+
+ 
+
+                    imagen: 'images/culote.jpg'  
+
+ 
+
+                },  
+
+ 
+
+                {  
+
+ 
+
+                    id: 2,  
+
+ 
+
+                    nombre: 'Puyazo',  
+
+ 
+
+                    precio: 45,  
+
+ 
+
+                    imagen: 'images/puyazo.jpg'  
+
+ 
+
+                },  
+
+ 
+
+                {  
+
+ 
+
+                    id: 3,  
+
+ 
+
+                    nombre: 'Pollo a la BBQ',  
+
+ 
+
+                    precio: 40,  
+
+ 
+
+                    imagen: 'images/pollo a la bqq.jpg'  
+
+ 
+
+                },  
+
+                {  
+
+ 
+
+                    id: 4,  
+
+ 
+
+                    nombre: 'Viuda con hueso',  
+
+ 
+
+                    precio: 55,  
+
+ 
+
+                    imagen: 'images/viuda con hueso.jpg'  
+
+ 
+
+                },  
+
+                {  
+
+ 
+
+                    id: 5,  
+
+ 
+
+                    nombre: 'Viuda con hueso',  
+
+ 
+
+                    precio: 55,  
+
+ 
+
+                    imagen: 'images/costillas.jpg' 
+                 },
+
+                 {  
+
+ 
+
+                    id: 6,  
+
+ 
+
+                    nombre: 'costillitas',  
+
+ 
+
+                    precio: 50,  
+
+ 
+
+                    imagen: 'images/costillas.jpg' 
+                 },
+                 {  
+
+ 
+
+                    id: 6,  
+
+ 
+
+                    nombre: 'costillitas',  
+
+ 
+
+                    precio: 50,  
+
+ 
+
+                    imagen: 'images/costillas.jpg' 
+                 },
+                 {  
+
+ 
+
+                    id: 7,  
+
+ 
+
+                    nombre: 'Papas fritas',  
+
+ 
+
+                    precio: 12,  
+
+ 
+
+                    imagen: 'images/papas fritas.jpg' 
+                 },
+                 {  
+
+ 
+
+                    id: 8,  
+
+ 
+
+                    nombre: 'pure de papa',  
+
+ 
+
+                    precio: 12,  
+
+ 
+
+                    imagen: 'images/pure de papa.jpg' 
+                 },
+
+                 {  
+
+ 
+
+                    id: 9,  
+
+ 
+
+                    nombre: 'macarrones',  
+
+ 
+
+                    precio: 12,  
+
+ 
+
+                    imagen: 'images/macarrones.jpg' 
+                 },
+                 {  
+
+ 
+
+                    id: 10,  
+
+ 
+
+                    nombre: 'Elote',  
+
+ 
+
+                    precio: 12,  
+
+ 
+
+                    imagen: 'images/elote.jpg' 
+                 },
+                 {  
+
+ 
+
+                    id: 11,  
+
+ 
+
+                    nombre: 'Gaseosas',  
+
+ 
+
+                    precio: 15,  
+
+ 
+
+                    imagen: 'images/gaseosa.jpg' 
+                 },
+                 {  
+
+ 
+
+                    id: 12,  
+
+ 
+
+                    nombre: 'Milkshake',  
+
+ 
+
+                    precio: 25,  
+
+ 
+
+                    imagen: 'images/milkshake.jpg' 
+                 },
+
+                 {  
+
+ 
+
+                    id: 13,  
+
+ 
+
+                    nombre: 'Cerveza',  
+
+ 
+
+                    precio: 17,  
+
+ 
+
+                    imagen: 'images/cervezas.jpg' 
+                 },
+
+
+
+
+  
+
+ 
+
+            ];  
+
+ 
+
+  
+
+ 
+
+            let carrito = [];  
+
+ 
+
+            let total = 0;  
+
+ 
+
+            const DOMitems = document.querySelector('#items');  
+
+ 
+
+            const DOMcarrito = document.querySelector('#carrito');  
+
+ 
+
+            const DOMtotal = document.querySelector('#total');  
+
+ 
+
+            const DOMbotonVaciar = document.querySelector('#boton-vaciar');  
+
+ 
+
+            const miLocalStorage = window.localStorage;  
+
+ 
+
+  
+
+ 
+
+            // Funciones  
+
+ 
+
+  
+
+ 
+
+            /**  
+
+ 
+
+            * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito  
+
+ 
+
+            */  
+
+ 
+
+            function renderizarProductos() {  
+
+ 
+
+                baseDeDatos.forEach((info) => {  
+
+ 
+
+                    // Estructura  
+
+ 
+
+                    const miNodo = document.createElement('div');  
+
+ 
+
+                    miNodo.classList.add('card', 'col-sm-4');  
+
+ 
+
+                    // Body  
+
+ 
+
+                    const miNodoCardBody = document.createElement('div');  
+
+ 
+
+                    miNodoCardBody.classList.add('card-body');  
+
+ 
+
+                    // Titulo  
+
+ 
+
+                    const miNodoTitle = document.createElement('h5');  
+
+ 
+
+                    miNodoTitle.classList.add('card-title');  
+
+ 
+
+                    miNodoTitle.textContent = info.nombre;  
+
+ 
+
+                    // Imagen  
+
+ 
+
+                    const miNodoImagen = document.createElement('img');  
+
+ 
+
+                    miNodoImagen.classList.add('img-fluid');  
+
+ 
+
+                    miNodoImagen.setAttribute('src', info.imagen);  
+
+ 
+
+                    // Precio  
+
+ 
+
+                    const miNodoPrecio = document.createElement('p');  
+
+ 
+
+                    miNodoPrecio.classList.add('card-text');  
+
+ 
+
+                    miNodoPrecio.textContent = info.precio + 'Q';  
+
+ 
+
+                    // Boton   
+
+ 
+
+                    const miNodoBoton = document.createElement('button');  
+
+ 
+
+                    miNodoBoton.classList.add('btn', 'btn-primary');  
+
+ 
+
+                    miNodoBoton.textContent = '+';  
+
+ 
+
+                    miNodoBoton.setAttribute('marcador', info.id);  
+
+ 
+
+                    miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);  
+
+ 
+
+                    // Insertamos  
+
+ 
+
+                    miNodoCardBody.appendChild(miNodoImagen);  
+
+ 
+
+                    miNodoCardBody.appendChild(miNodoTitle);  
+
+ 
+
+                    miNodoCardBody.appendChild(miNodoPrecio);  
+
+ 
+
+                    miNodoCardBody.appendChild(miNodoBoton);  
+
+ 
+
+                    miNodo.appendChild(miNodoCardBody);  
+
+ 
+
+                    DOMitems.appendChild(miNodo);  
+
+ 
+
+                });  
+
+ 
+
+            }  
+
+ 
+
+  
+
+ 
+
+            /**  
+
+ 
+
+            * Evento para añadir un producto al carrito de la compra  
+
+ 
+
+            */  
+
+ 
+
+            function anyadirProductoAlCarrito(evento) {  
+
+ 
+
+                // Anyadimos el Nodo a nuestro carrito  
+
+ 
+
+                carrito.push(evento.target.getAttribute('marcador'))  
+
+ 
+
+                // Calculo el total  
+
+ 
+
+                calcularTotal();  
+
+ 
+
+                // Actualizamos el carrito   
+
+ 
+
+                renderizarCarrito();  
+
+ 
+
+                // Actualizamos el LocalStorage  
+
+ 
+
+                guardarCarritoEnLocalStorage();  
+
+ 
+
+            }  
+
+ 
+
+  
+
+ 
+
+            /**  
+
+ 
+
+            * Dibuja todos los productos guardados en el carrito  
+
+ 
+
+            */  
+
+ 
+
+            function renderizarCarrito() {  
+
+ 
+
+                // Vaciamos todo el html  
+
+ 
+
+                DOMcarrito.textContent = '';  
+
+ 
+
+                // Quitamos los duplicados  
+
+ 
+
+                const carritoSinDuplicados = [...new Set(carrito)];  
+
+ 
+
+                // Generamos los Nodos a partir de carrito  
+
+ 
+
+                carritoSinDuplicados.forEach((item) => {  
+
+ 
+
+                    // Obtenemos el item que necesitamos de la variable base de datos  
+
+ 
+
+                    const miItem = baseDeDatos.filter((itemBaseDatos) => {  
+
+ 
+
+                        // ¿Coincide las id? Solo puede existir un caso  
+
+ 
+
+                        return itemBaseDatos.id === parseInt(item);  
+
+ 
+
+                    });  
+
+ 
+
+                    // Cuenta el número de veces que se repite el producto  
+
+ 
+
+                    const numeroUnidadesItem = carrito.reduce((total, itemId) => {  
+
+ 
+
+                        // ¿Coincide las id? Incremento el contador, en caso contrario no mantengo  
+
+ 
+
+                        return itemId === item ? total += 1 : total;  
+
+ 
+
+                    }, 0);  
+
+ 
+
+                    // Creamos el nodo del item del carrito  
+
+ 
+
+                    const miNodo = document.createElement('li');  
+
+ 
+
+                    miNodo.classList.add('list-group-item', 'text-right', 'mx-2');  
+
+ 
+
+                    miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}Q`;  
+
+ 
+
+                    // Boton de borrar  
+
+ 
+
+                    const miBoton = document.createElement('button');  
+
+ 
+
+                    miBoton.classList.add('btn', 'btn-danger', 'mx-5');  
+
+ 
+
+                    miBoton.textContent = 'X';  
+
+ 
+
+                    miBoton.style.marginLeft = '1rem';  
+
+ 
+
+                    miBoton.dataset.item = item;  
+
+ 
+
+                    miBoton.addEventListener('click', borrarItemCarrito);  
+
+ 
+
+                    // Mezclamos nodos  
+
+ 
+
+                    miNodo.appendChild(miBoton);  
+
+ 
+
+                    DOMcarrito.appendChild(miNodo);  
+
+ 
+
+                });  
+
+ 
+
+            }  
+
+ 
+
+  
+
+ 
+
+            /**  
+
+ 
+
+            * Evento para borrar un elemento del carrito  
+
+ 
+
+            */  
+
+ 
+
+            function borrarItemCarrito(evento) {  
+
+ 
+
+                // Obtenemos el producto ID que hay en el boton pulsado  
+
+ 
+
+                const id = evento.target.dataset.item;  
+
+ 
+
+                // Borramos todos los productos  
+
+ 
+
+                carrito = carrito.filter((carritoId) => {  
+
+ 
+
+                    return carritoId !== id;  
+
+ 
+
+                });  
+
+ 
+
+                // volvemos a renderizar  
+
+ 
+
+                renderizarCarrito();  
+
+ 
+
+                // Calculamos de nuevo el precio  
+
+ 
+
+                calcularTotal();  
+
+ 
+
+                // Actualizamos el LocalStorage  
+
+ 
+
+                guardarCarritoEnLocalStorage();  
+
+ 
+
+  
+
+ 
+
+            }  
+
+ 
+
+  
+
+ 
+
+            /**  
+
+ 
+
+            * Calcula el precio total teniendo en cuenta los productos repetidos  
+
+ 
+
+            */  
+
+ 
+
+            function calcularTotal() {  
+
+ 
+
+                // Limpiamos precio anterior  
+
+ 
+
+                total = 0;  
+
+ 
+
+                // Recorremos el array del carrito  
+
+ 
+
+                carrito.forEach((item) => {  
+
+ 
+
+                    // De cada elemento obtenemos su precio  
+
+ 
+
+                    const miItem = baseDeDatos.filter((itemBaseDatos) => {  
+
+ 
+
+                        return itemBaseDatos.id === parseInt(item);  
+
+ 
+
+                    });  
+
+ 
+
+                    total = total + miItem[0].precio;  
+
+ 
+
+                });  
+
+ 
+
+                // Renderizamos el precio en el HTML  
+
+ 
+
+                DOMtotal.textContent = total.toFixed(2);  
+
+ 
+
+            }  
+
+ 
+
+  
+
+ 
+
+            /**  
+
+ 
+
+            * Varia el carrito y vuelve a dibujarlo  
+
+ 
+
+            */  
+
+ 
+
+            function vaciarCarrito() {  
+
+ 
+
+                // Limpiamos los productos guardados  
+
+ 
+
+                carrito = [];  
+
+ 
+
+                // Renderizamos los cambios  
+
+ 
+
+                renderizarCarrito();  
+
+ 
+
+                calcularTotal();  
+
+ 
+
+                // Borra LocalStorage  
+
+ 
+
+                localStorage.clear();  
+
+ 
+
+  
+
+ 
+
+            }  
+
+ 
+
+  
+
+ 
+
+            function guardarCarritoEnLocalStorage () {  
+
+ 
+
+                miLocalStorage.setItem('carrito', JSON.stringify(carrito));  
+
+ 
+
+            }  
+
+ 
+
+  
+
+ 
+
+            function cargarCarritoDeLocalStorage () {  
+
+ 
+
+                // ¿Existe un carrito previo guardado en LocalStorage?  
+
+ 
+
+                if (miLocalStorage.getItem('carrito') !== null) {  
+
+ 
+
+                    // Carga la información  
+
+ 
+
+                    carrito = JSON.parse(miLocalStorage.getItem('carrito'));  
+
+ 
+
+                }  
+
+ 
+
+            }  
+
+ 
+
+  
+
+ 
+
+            // Eventos  
+
+ 
+
+            DOMbotonVaciar.addEventListener('click', vaciarCarrito);  
+
+ 
+
+  
+
+ 
+
+            // Inicio  
+
+ 
+
+            cargarCarritoDeLocalStorage();  
+
+ 
+
+            renderizarProductos();  
+
+ 
+
+            calcularTotal();  
+
+ 
+
+            renderizarCarrito();  
+
+ 
+
+        }  
+
+ 
+
+  
+
+ 
+
+    </script>  
+
+ 
+
+</head>  
+
+ 
+
+<body>  
+
+ 
+
+    <div class="container">  
+
+ 
+
+        <div class="row">  
+
+ 
+
+            <!-- Elementos generados a partir del JSON -->  
+
+ 
+
+            <main id="items" class="col-sm-8 row"></main>  
+
+ 
+
+            <!-- Carrito -->  
+
+ 
+
+            <aside class="col-sm-4">  
+
+ 
+
+               <font color="red"> <h2>Carrito</h2>
+ 
+
+                <!-- Elementos del carrito -->  
+
+ 
+
+                <ul id="carrito" class="list-group"></ul>  
+
+ 
+
+                <hr>  
+
+ 
+
+                <!-- Precio total -->  
+
+ 
+
+                <p class="text-right" font color="white">Total: <span id="total"></span>Q;</p>  
+
+ 
+
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+<a href="venta.html">
+<img src="images/enviar.jpg" alt="enviar" table width="40"></a  
+
+ 
+
+            ></aside>  
+
+ 
+
+        </div>  
+
+ 
+
+    </div>   
+
+ 
+
+</br> </br>  
+
+ 
+
+</center>  
+
+ 
+
+</center></table></tr></td>
+</div></div>
+</div>
+<center>
+<a href="https://twitter.com/?lang=es"><img src="images/twitter.jpg" alt="twitter" table width="160"></a>
+<a href="https://es-la.facebook.com/"><img src="images/facebook.jpg" alt="facebook" table width="190"></a> 
+<a href="https://www.instagram.com/">
+<img src="images/instagram.jpg" alt="instagram" table width="170"></a>
+</center>
+<font color="white">
+<a href="index.html">inicio</a> -
+<a href="productos.html">prductos</a> -
+<a href="ubicacion.html">ubicacion</a> -
+<a href="ventas.html">ventas</a> -
+<a href="politicas.html">politicas</a> <br>copyright 2021 mandamos un mensahe via email a
+<a href="mailto:jessicasamantha297@gmail.com">jessicasamantha297@gmail.com</a> o <a href="mailto:melanyandrea9@gmail.com">melanyandrea9@gmail.com</a>
+</center>
+</td></tr></table></center>  
+
+ 
+
+</body>  
+
+ 
+
+</html>
